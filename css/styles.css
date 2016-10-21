@@ -18,3 +18,11 @@
 .navbar {
   margin-bottom: 0px;
 }
+
+.track-suggestion {
+  display: none;
+}
+
+.no-track {
+  display: none;
+}

@@ -23,181 +23,192 @@
       <h1>Choose a track at Epicodus!</h1>
     </div>
     <div class="container">
-      <h3>Answer the following question to help determine what track to take at Epicodus</h3>
-      <br>
-      <form id="track-qestions">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">Are you more interested in front-end or back-end development?</h3>
+      <div class="question-form">
+        <h3>Answer the following question to help determine what track to take at Epicodus</h3>
+        <br>
+        <form id="track-qestions">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Are you more interested in front-end or back-end development?</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="question1" id="question1-1" value="option1" checked>
+                      Front-end development
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="question1" id="question1-2" value="option2">
+                      Back-end development
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="question1" id="question1-3" value="option3">
+                      I'm not sure
+                    </label>
+                  </div>
+                </div>
               </div>
-              <div class="panel-body">
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question1" id="question1-1" value="option1" checked>
-                    Front-end development
-                  </label>
+            </div>
+            <div class="col-md-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Are you interested in design and making webpages look great?</h3>
                 </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question1" id="question1-2" value="option2">
-                    Back-end development
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question1" id="question1-3" value="option3">
-                    I'm not sure
-                  </label>
+                <div class="panel-body">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="question2" id="question2-1" value="option1" checked>
+                      I love design and making things look great.
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="question2" id="question2-2" value="option2">
+                      I'm somewhat interested in design.
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="question2" id="question2-3" value="option3">
+                      I don't really care how things look, only if they work.
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">Are you interested in design and making webpages look great?</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Do you see yourself working at a large company?</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="question3" id="question3-1" value="option1" checked>
+                      Yes, the bigger the company the better.
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="question3" id="question3-2" value="option2">
+                      No, I'd rather work at a small buisness or start-up.
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="question3" id="question3-3" value="option3">
+                      I don't care about the size of the company.
+                    </label>
+                  </div>
+                </div>
               </div>
-              <div class="panel-body">
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question2" id="question2-1" value="option1" checked>
-                    I love design and making things look great.
-                  </label>
+            </div>
+            <div class="col-md-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Are you interested in mobile application development?</h3>
                 </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question2" id="question2-2" value="option2">
-                    I'm somewhat interested in design.
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question2" id="question2-3" value="option3">
-                    I don't really care how things look, only if they work.
-                  </label>
+                <div class="panel-body">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="question4" id="question4-1" value="option1" checked>
+                      Yes, I'd love to create mobile apps.
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="question4" id="question4-2" value="option2">
+                      No, I perfer the openess of web development.
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="question4" id="question4-3" value="option3">
+                      I'm not sure.
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Would you like to make interactive web applications?</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="question5" id="question5-1" value="option1" checked>
+                      Yes, that sounds great!
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="question5" id="question5-2" value="option2">
+                      I'm fairly interested in web apps.
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="question5" id="question5-3" value="option3">
+                      I'm not sure
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Do you like the idea of working for multiple clients?</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="question6" id="question6-1" value="option1" checked>
+                      Yes, I'd love to work for an agency that has many different clients.
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="question6" id="question6-2" value="option2">
+                      No, I'd prefer to focus on larger projects for the company I work for.
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="question6" id="question6-3" value="option3">
+                      I'm not sure.
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn">Submit!</button>
+        </form>
+      </div>
+      <div class="track-suggestion">
+        <div class="jumbotron">
+        <p>You should look into the <span id="answer"></span> track!</p>
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">Do you see yourself working at a large company?</h3>
-              </div>
-              <div class="panel-body">
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question3" id="question3-1" value="option1" checked>
-                    Yes, the bigger the company the better.
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question3" id="question3-2" value="option2">
-                    No, I'd rather work at a small buisness or start-up.
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question3" id="question3-3" value="option3">
-                    I don't care about the size of the company.
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">Are you interested in mobile application development?</h3>
-              </div>
-              <div class="panel-body">
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question4" id="question4-1" value="option1" checked>
-                    Yes, I'd love to create mobile apps.
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question4" id="question4-2" value="option2">
-                    No, I perfer the openess of web development.
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question4" id="question4-3" value="option3">
-                    I'm not sure.
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">Would you like to make interactive web applications?</h3>
-              </div>
-              <div class="panel-body">
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question5" id="question5-1" value="option1" checked>
-                    Yes, that sounds great!
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question5" id="question5-2" value="option2">
-                    I'm fairly interested in web apps.
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question5" id="question5-3" value="option3">
-                    I'm not sure
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">Do you like the idea of working for multiple clients?</h3>
-              </div>
-              <div class="panel-body">
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question6" id="question6-1" value="option1" checked>
-                    Yes, I'd love to work for an agency that has many different clients.
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question6" id="question6-2" value="option2">
-                    No, I'd prefer to focus on larger projects for the company I work for.
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question6" id="question6-3" value="option3">
-                    I'm not sure.
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
+      </div>
+      <div class="no-track">
+        <div class="jumbotron">
+          <h2>Hmm...looks like we don't have a definite suggestion for you.</h2>
+          <h2><small>This blog post, <a href="http://www.epicodus.com/blog/what-programming-language-should-i-learn">"What Programming Language Should I Learn?"</a> might help refine your answers.</small></h2>
         </div>
         <button type="submit" class="btn">Submit!</button>
-      </form>
-      <div class="output">
-        <p>You should look into the <span id="answer"></span> track!</p>
       </div>
     </div>
   </body>

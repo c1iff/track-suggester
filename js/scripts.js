@@ -35,6 +35,14 @@ $(document).ready(function() {
 
     var result = whichTrack(answer1, answer2, answer3, answer4, answer5, answer6);
 
-    $("#answer").text(result);
+    $(".question-form").toggle();
+    if (result === "no preference") {
+      $(".no-track").toggle();
+    } else {
+      $("#answer").text(result);
+      $(".track-suggestion").toggle();
+
+    }
+
   });
 });
