@@ -1,12 +1,12 @@
 # Epicodus Track Suggestor-Independent Project 2
 
-#### Independent project using HTML, CSS, Javascript, and Jquery, 10.21.2016
+#### Independent project using HTML, CSS, Javascript, and Jquery- 10.21.2016
 
 #### By Chris Clifford
 
 ## Description
 
-This is a webpage that gives the user a suggestion based on the selection they enter from a series of question.  The result if a suggestion about which track to pursue at Epicodus. The user submit the answers and a suggestion with additional information appears.
+This is a webpage that gives the user a suggestion based on the answers they give to a series of questions.  The result is a suggestion about which track to pursue at Epicodus. The user submit the answers and a suggestion with additional information appears.
 
 ## Setup/Installation Requirements
 
@@ -21,7 +21,7 @@ There aren't any bugs known at this time
 
 ## Support and contact details
 
-Pleas contact github user c1iff or email cclifford82@gmail.com with any questions of comments about this project.  Please feel free to clone and contribute as well.
+Pleas contact github user c1iff or email cclifford82@gmail.com with any questions or comments about this project.  Please feel free to clone and contribute as well.
 
 ## Technologies Used
 
