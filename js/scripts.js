@@ -47,7 +47,7 @@ var whichLink = function(track) {
 
 $(document).ready(function() {
 
-  //Get users name and store as variable
+  //Event handler to get users name and store as variable
   $("form#user-name").submit(function() {
     event.preventDefault();
     var userName = $("#userName").val();
@@ -65,6 +65,7 @@ $(document).ready(function() {
     }
   });
 
+  //Event handler for submit button for answers to questions
   $("form#track-qestions").submit(function() {
     event.preventDefault();
 
