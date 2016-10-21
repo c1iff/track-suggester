@@ -30,3 +30,13 @@
 .no-track {
   display: none;
 }
+
+#nav-q {
+  pointer-events: none;
+  cursor: default;
+}
+
+#nav-track {
+  pointer-events: none;
+  cursor: default;
+}

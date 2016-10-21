@@ -1,7 +1,8 @@
 // ****** Business logic ******
 
-/* The following function returns a string with the name of a
-track at Epicodus based on answers from a form
+/*
+The following function returns a string with the
+name of a track at Epicodus, based on answers from a form
 */
 var whichTrack = function(answer1, answer2, answer3, answer4, answer5, answer6) {
   if ((answer1 === "option1" && answer2 === "option1") || (answer1 === "option1" && answer2 === "option2") || (answer1 === "option3" && answer2 === "option1")) {
@@ -21,7 +22,8 @@ var whichTrack = function(answer1, answer2, answer3, answer4, answer5, answer6) 
 };
 
 
-/* The following function returns a link string
+/*
+The following function returns a link string
 based on the suggestion returned from whichTrack()
 */
 var whichLink = function(track) {
@@ -44,14 +46,23 @@ var whichLink = function(track) {
 // ***** User interface logic *****
 
 $(document).ready(function() {
-  //Get users name and input into text prompts
+
+  //Get users name and store as variable
   $("form#user-name").submit(function() {
     event.preventDefault();
     var userName = $("#userName").val();
-    $(".user").text(userName);
-    $(".ask-name").toggle();
-    $(".question-form").toggle();
 
+    //check if field is empty change field to warning state
+    if (userName === "") {
+      $("#user-name").addClass("has-error");
+    } else {
+      //Add user's name to DOM
+      $(".user").text(userName);
+
+      //hide name entry form and show questions
+      $(".ask-name").toggle();
+      $(".question-form").fadeToggle();
+    }
   });
 
   $("form#track-qestions").submit(function() {
