@@ -1,7 +1,7 @@
 // Business logic:
 
 var whichTrack = function(answer1, answer2, answer3, answer4, answer5, answer6) {
-  if (answer1 === "option1") {
+  if ((answer1 === "option1" && answer2 === "option1") || () {
     return "CSS and Design"
   } else {
     return "Ruby"
