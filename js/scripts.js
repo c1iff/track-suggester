@@ -17,6 +17,20 @@ var whichTrack = function(answer1, answer2, answer3, answer4, answer5, answer6) 
 
 };
 
+var whichLink = function(track) {
+  if (track === "CSS and Design") {
+    return "http://www.epicodus.com/design"
+  } else if (track === "C# and .Net") {
+    return "http://www.epicodus.com/c-sharp"
+  } else if (track === "Java and Android") {
+    return "http://www.epicodus.com/java"
+  } else if (track === "Ruby and Rails") {
+    return "http://www.epicodus.com/ruby"
+  } else if (track === "PHP and Drupal") {
+    return "http://www.epicodus.com/php"
+  }
+}
+
 
 
 // User interface logic:
@@ -37,10 +51,10 @@ $(document).ready(function() {
 
     $(".question-form").toggle();
     if (result === "no preference") {
-      $(".no-track").toggle();
+      $(".no-track").fadeToggle();
     } else {
       $("#answer").text(result);
-      $(".track-suggestion").toggle();
+      $(".track-suggestion").fadeToggle();
 
     }
 
