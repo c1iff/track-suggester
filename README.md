@@ -10,7 +10,7 @@ This is a webpage that gives the user a suggestion based on the selection they e
 
 ## Setup/Installation Requirements
 
-* Enter the url: https://c1iff.github.io/track-suggestor
+* Enter the url: https://c1iff.github.io/track-suggester
 * Follow the prompts
 * Reload page to reset
 
