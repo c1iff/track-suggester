@@ -1,7 +1,7 @@
 // ****** Business logic ******
 
-/* The following function returns a track suggestion string
-based on answers from a form
+/* The following function returns a string with the name of a
+track at Epicodus based on answers from a form
 */
 var whichTrack = function(answer1, answer2, answer3, answer4, answer5, answer6) {
   if ((answer1 === "option1" && answer2 === "option1") || (answer1 === "option1" && answer2 === "option2") || (answer1 === "option3" && answer2 === "option1")) {
@@ -44,6 +44,16 @@ var whichLink = function(track) {
 // ***** User interface logic *****
 
 $(document).ready(function() {
+  //Get users name and input into text prompts
+  $("form#user-name").submit(function() {
+    event.preventDefault();
+    var userName = $("#userName").val();
+    $(".user").text(userName);
+    $(".ask-name").toggle();
+    $(".question-form").toggle();
+
+  });
+
   $("form#track-qestions").submit(function() {
     event.preventDefault();
 
@@ -61,7 +71,7 @@ $(document).ready(function() {
     //get link to display to user
     var link = whichLink(result);
 
-    //hide questions
+    //hide questions and UI element selected
     $(".question-form").toggle();
     $("#nav-q").removeClass("active");
     $("#nav-track").addClass("active");
@@ -70,11 +80,9 @@ $(document).ready(function() {
     if (result === "no suggestion") {
       $(".no-track").fadeToggle();   //show info if no suggestion returned
     } else {
-
       $("#answer").text(result);  //insert track suggestion into span element #answer
-      $("#learn-more").attr("href", link)
+      $("#learn-more").attr("href", link) //add link to learn more button
       $(".track-suggestion").fadeToggle(); //show suggestion div
-
     }
 
   });

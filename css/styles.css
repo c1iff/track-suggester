@@ -19,6 +19,10 @@
   margin-bottom: 0px;
 }
 
+.question-form {
+  display: none;
+}
+
 .track-suggestion {
   display: none;
 }

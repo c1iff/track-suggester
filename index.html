@@ -23,8 +23,19 @@
       <h1>Choose a track at Epicodus!</h1>
     </div>
     <div class="container">
+      <div class="ask-name">
+        <div class="jumbotron">
+          <form id="user-name">
+            <div class="form-group">
+              <label for="userName"><h3>Hey there! What's your name?</h3></label>
+              <input type="text" class="form-control" id="userName" placeholder="Enter your name here">
+            </div>
+            <button type="submit" class="btn btn-default">Next!</button>
+          </form>
+        </div>
+      </div>
       <div class="question-form">
-        <h3>Answer the following questions to help determine what track to take at Epicodus:</h3>
+        <h3>Hi <span class="user"></span>, answer the following questions to help determine what track to take at Epicodus:</h3>
         <br>
         <form id="track-qestions">
           <div class="row">
@@ -200,7 +211,7 @@
       </div>
       <div class="track-suggestion">
         <div class="jumbotron">
-        <h2>You should look into the <span id="answer"></span> track!</h2>
+        <h2><span class="user"></span>, you should look into the <span id="answer"></span> track!</h2>
         <br>
         <p><a id="learn-more" class="btn btn-primary btn-lg" role="button">Learn more</a></p>
         </div>
